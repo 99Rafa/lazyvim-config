@@ -2,7 +2,28 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set({ "n", "v" }, ";", ":")
+local set = vim.keymap.set
 
-vim.keymap.set("n", "<c-d>", "<c-d>zz")
-vim.keymap.set("n", "<c-u>", "<c-u>zz")
+-- Disable
+set("n", "<leader>l", "<nop>")
+
+-- General
+set({ "n", "v" }, ";", ":")
+
+set({ "n", "v" }, "<c-d>", "<c-d>zz")
+set({ "n", "v" }, "<c-u>", "<c-u>zz")
+set({ "n", "v" }, "G", "Gzz")
+
+set("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "Open lazyvim" })
+
+set("n", "<leader>ld", function()
+  vim.diagnostic.open_float({ border = "rounded" })
+end, { desc = "Floating diagnostics" })
+
+set("n", "<leader>sl", "<cmd>set list!<cr>", { desc = "Set list" })
+set(
+  "n",
+  "<leader>cc",
+  '<cmd>execute "set colorcolumn=" . (&colorcolumn == "" ? "80" : "")<cr>',
+  { desc = "Color column" }
+)
