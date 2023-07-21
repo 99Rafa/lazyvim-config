@@ -6,5 +6,5 @@ local opt = vim.opt
 
 opt.colorcolumn = "80"
 
--- opt.list = false
+opt.list = false
 opt.listchars = { space = "·" }
