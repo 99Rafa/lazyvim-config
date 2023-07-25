@@ -27,3 +27,5 @@ set(
   '<cmd>execute "set colorcolumn=" . (&colorcolumn == "" ? "80" : "")<cr>',
   { desc = "Color column" }
 )
+
+set("n", "<leader>ub", "<cmd>set breakindent<cr>", { desc = "Set breakindent" })
