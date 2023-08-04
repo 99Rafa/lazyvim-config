@@ -28,4 +28,4 @@ set(
   { desc = "Color column" }
 )
 
-set("n", "<leader>ub", "<cmd>set breakindent<cr>", { desc = "Set breakindent" })
+set("n", "<leader>uw", "<cmd>set wrap breakindent linebreak<cr>", { desc = "Word wrap" })

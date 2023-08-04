@@ -8,3 +8,4 @@ opt.colorcolumn = "80"
 
 opt.list = false
 opt.listchars = { space = "·" }
+opt.scrolloff = 10
