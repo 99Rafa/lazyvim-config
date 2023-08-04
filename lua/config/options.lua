@@ -9,3 +9,5 @@ opt.colorcolumn = "80"
 opt.list = false
 opt.listchars = { space = "·" }
 opt.scrolloff = 10
+opt.tabstop = 4
+opt.shiftwidth = 4
