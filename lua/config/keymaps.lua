@@ -8,7 +8,7 @@ local set = vim.keymap.set
 set("n", "<leader>l", "<nop>")
 
 -- General
-set({ "n", "v" }, ";", ":")
+-- set({ "n", "v" }, ";", ":")
 
 set({ "n", "v" }, "<c-d>", "<c-d>zz")
 set({ "n", "v" }, "<c-u>", "<c-u>zz")
