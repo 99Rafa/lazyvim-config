@@ -1,48 +1,91 @@
 return {
   "ThePrimeagen/harpoon",
+  branch = "harpoon2",
+  opts = {
+    menu = {
+      width = vim.api.nvim_win_get_width(0) - 4,
+    },
+  },
   keys = {
-    { "<leader>hs", "<cmd>Telescope harpoon marks<cr>", desc = "Toggle quick menu" },
     {
       "<leader>ha",
       function()
-        require("harpoon.mark").add_file()
+        require("harpoon"):list():append()
       end,
-      desc = "Add file to harpoon",
+      desc = "Harpoon file",
     },
     {
       "<leader>he",
       function()
-        require("harpoon.ui").toggle_quick_menu()
+        local harpoon = require("harpoon")
+        harpoon.ui:toggle_quick_menu(harpoon:list(), {
+          title = " Harpoon ",
+          title_pos = "center",
+          border = "single",
+        })
+        -- local harpoon = require("harpoon")
+        -- local conf = require("telescope.config").values
+        -- local harpoon_files = harpoon:list()
+        --
+        -- local file_paths = {}
+        -- for _, item in ipairs(harpoon_files.items) do
+        --   table.insert(file_paths, item.value)
+        -- end
+        --
+        -- require("telescope.pickers")
+        --   .new({}, {
+        --     prompt_title = "Harpoon",
+        --     finder = require("telescope.finders").new_table({
+        --       results = file_paths,
+        --     }),
+        --     previewer = conf.file_previewer({}),
+        --     sorter = conf.generic_sorter({}),
+        --   })
+        --   :find()
       end,
-      desc = "Harpoon menu",
+      desc = "Harpoon quick menu",
     },
     {
       "<C-h>",
       function()
-        require("harpoon.ui").nav_file(1)
+        require("harpoon"):list():select(1)
       end,
-      desc = "Navigate to file 1",
+      desc = "Harpoon to file 1",
     },
     {
       "<C-j>",
       function()
-        require("harpoon.ui").nav_file(2)
+        require("harpoon"):list():select(2)
       end,
-      desc = "Navigate to file 2",
+      desc = "Harpoon to file 2",
     },
     {
       "<C-k>",
       function()
-        require("harpoon.ui").nav_file(3)
+        require("harpoon"):list():select(3)
       end,
-      desc = "Navigate to file 3",
+      desc = "Harpoon to file 3",
     },
     {
       "<C-l>",
       function()
-        require("harpoon.ui").nav_file(4)
+        require("harpoon"):list():select(4)
       end,
-      desc = "Navigate to file 4",
+      desc = "Harpoon to file 4",
+    },
+    {
+      "<A-h>",
+      function()
+        require("harpoon"):list():prev()
+      end,
+      desc = "Previous buffer",
+    },
+    {
+      "<A-l>",
+      function()
+        require("harpoon"):list():next()
+      end,
+      desc = "Next buffer",
     },
   },
 }
