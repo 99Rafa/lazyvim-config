@@ -5,12 +5,12 @@ return {
     {
       "<leader>fo",
       "<cmd>Telescope file_browser<cr>",
-      desc = "File browser (Current dir)",
+      desc = "File browser (cwd)",
     },
     {
       "<leader>fO",
       ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
-      desc = "File browser (Root dir)",
+      desc = "File browser (root)",
     },
   },
 }
