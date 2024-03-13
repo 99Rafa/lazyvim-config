@@ -5,5 +5,8 @@ return {
     options = {
       section_separators = { left = "", right = "" },
     },
+    sections = {
+      lualine_z = {},
+    },
   },
 }
