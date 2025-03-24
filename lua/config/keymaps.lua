@@ -43,3 +43,7 @@ set(
   '<cmd>execute "set showtabline=" . (&showtabline == "0" ? "2" : "0")<cr>',
   { desc = "Toggle tabline" }
 )
+
+set({ "n", "v" }, "<leader>fm", function()
+  LazyVim.format({ force = true })
+end, { desc = "Format" })

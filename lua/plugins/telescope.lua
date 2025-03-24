@@ -15,6 +15,6 @@ return {
   },
 
   keys = {
-    { "<leader>fw", require("lazyvim.util").telescope("live_grep"), desc = "Grep (root dir)" },
+    -- { "<leader>fw", require("telescope.builtin").live_grep, desc = "Grep (root dir)" },
   },
 }
