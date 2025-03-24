@@ -1,20 +1,20 @@
 local Colors = {
-  TelescopeBorder = { bg = "#16161e", fg = "#16161e" },
-
-  TelescopePromptBorder = { bg = "#1a1b26", fg = "#1a1b26" },
-  TelescopePromptNormal = { bg = "#1a1b26" },
-  TelescopePromptTitle = { bg = "#2ac3de", fg = "#1a1b26" },
-
-  TelescopePreviewTitle = { bg = "#bb9af7", fg = "#1a1b26" },
-
-  TelescopeResultsTitle = { bg = "#f7768e", fg = "#1a1b26" },
+  -- TelescopeBorder = { bg = "#16161e", fg = "#16161e" },
+  --
+  -- TelescopePromptBorder = { bg = "#1a1b26", fg = "#1a1b26" },
+  -- TelescopePromptNormal = { bg = "#1a1b26" },
+  -- TelescopePromptTitle = { bg = "#2ac3de", fg = "#1a1b26" },
+  --
+  -- TelescopePreviewTitle = { bg = "#bb9af7", fg = "#1a1b26" },
+  --
+  -- TelescopeResultsTitle = { bg = "#f7768e", fg = "#1a1b26" },
 
   -- FlashCursor = { background = "#ff9e64" }, -- Navy blue
   -- FlashCursor = { background = "#9ece6a" }, -- Purple
   -- FlashCursor = { background = "#db4b4b" }, -- Green
   -- FlashCursor = { background = "#85353e" }, -- Bluish green
   -- FlashCursor = { background = "#c97018" }, -- Normal blue
-  FlashCursor = { bg = "#ff0000" }, -- Teal blue
+  -- FlashCursor = { bg = "#ff0000" }, -- Teal blue
 
   FloatTitle = { bg = "#2ac3de", fg = "#1a1b26" },
   FloatBorder = { bg = "#16161e", fg = "#16161e" },
