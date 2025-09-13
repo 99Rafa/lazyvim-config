@@ -4,6 +4,10 @@ return {
   lazy = false,
 
   opts = {
+    view_options = {
+      -- g. to toggle hidden files
+      show_hidden = true,
+    },
     float = {
       padding = 5,
     },
