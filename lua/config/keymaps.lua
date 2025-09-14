@@ -9,8 +9,8 @@ set("n", "<leader>l", "<nop>")
 -- set({ "n", "v" }, ";", ":")
 
 -- Splits
-set("n", "<leader>hs", "<C-w>s")
-set("n", "<leader>vs", "<C-w>v")
+set("n", "<leader>hs", "<C-w>s", { desc = "Horisontal split" })
+set("n", "<leader>vs", "<C-w>v", { desc = "Vertical split" })
 
 -- Movement
 set({ "n", "v" }, "<c-d>", "<c-d>zz")
