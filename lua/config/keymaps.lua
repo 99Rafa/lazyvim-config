@@ -8,6 +8,10 @@ local set = vim.keymap.set
 set("n", "<leader>l", "<nop>")
 -- set({ "n", "v" }, ";", ":")
 
+-- Splits
+set("n", "<leader>hs", "<C-w>s")
+set("n", "<leader>vs", "<C-w>v")
+
 -- Movement
 set({ "n", "v" }, "<c-d>", "<c-d>zz")
 set({ "n", "v" }, "<c-u>", "<c-u>zz")
